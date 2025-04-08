@@ -1,19 +1,39 @@
+import { ContactCard } from './components/contact-card';
+import { fetchSingleContact } from './lib/api-utils';
+import { ContactInfo } from './lib/definitions';
+import { transformContact } from './lib/contact-utils';
+import Link from 'next/link';
 
-export default function Page() {
+export default async function Page() {
+  let contact: ContactInfo | null = null;
+  let error: string | null = null;
+
+  try {
+    const apiContact = await fetchSingleContact();
+    contact = transformContact(apiContact);
+  } catch (err) {
+    console.error('Error fetching contact:', err);
+    error = 'Error fetching contact information. Please try again later.';
+  }
 
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        vCard Contact Generator
       </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
-
+      {error ? (
+        <div className="mb-4 text-red-500">{error}</div>
+      ) : contact ? (
+        <div className="mb-8">
+          <ContactCard contact={contact} />
+        </div>
+      ) : null}
+      <Link
+        href="/"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 ease-in-out"
+      >
+        New Contact
+      </Link>
     </section>
-  )
+  );
 }

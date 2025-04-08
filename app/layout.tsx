@@ -11,17 +11,26 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'vCard Contact Generator',
+    template: '%s | vCard Contact Generator',
   },
-  description: 'This is my portfolio.',
+  description: 'Generate random vCard contacts, made by Kingsley Leung.',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'vCard Contact Generator',
+    description: 'Generate random vCard contacts, made by Kingsley Leung.',
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'vCard Contact Generator',
     locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'vCard Contact Generator',
+    description: 'Generate random vCard contacts, made by Kingsley Leung.',
+    // siteId: 'your_twitter_site_id', // To be added later
+    creator: '@KingsleyLeung03',
+    creatorId: '723487452988465152',
+    // images: ['/og-image.jpg'], // To be added later
   },
   robots: {
     index: true,
