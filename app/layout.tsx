@@ -2,7 +2,7 @@ import './global.scss'
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
-import { Navbar } from './components/nav'
+// import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
@@ -11,17 +11,26 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'vCard Contact Generator',
+    template: '%s | vCard Contact Generator',
   },
-  description: 'This is my portfolio.',
+  description: 'Generate random vCard contacts, made by Kingsley Leung.',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'vCard Contact Generator',
+    description: 'Generate random vCard contacts, made by Kingsley Leung.',
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'vCard Contact Generator',
     locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'vCard Contact Generator',
+    description: 'Generate random vCard contacts, made by Kingsley Leung.',
+    // siteId: 'your_twitter_site_id', // To be added later
+    creator: '@KingsleyLeung03',
+    creatorId: '723487452988465152',
+    // images: ['/og-image.jpg'], // To be added later
   },
   robots: {
     index: true,
@@ -52,9 +61,9 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+      <body className="antialiased max-w-xl mx-auto px-4 mt-8">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
           <Footer />
           <Analytics />

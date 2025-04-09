@@ -17,17 +17,21 @@ function ArrowIcon() {
 
 export default function Footer() {
   return (
-    <footer className="mb-16">
-      <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
+    <footer className="mb-16 mt-8">
+      
+      <p className="mt-2 text-neutral-600 dark:text-neutral-300">
+        © {new Date().getFullYear()} Kingsley Leung. MIT Licensed
+      </p>
+      <ul className="font-sm mt-2 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
         <li>
           <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/vercel/next.js"
+            href="https://github.com/KingsleyLeung03/vcard_contact_generator"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">github</p>
+            <p className="ml-2 h-7">GitHub</p>
           </a>
         </li>
         <li>
@@ -35,15 +39,23 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://vercel.com/templates/next.js/portfolio-starter-kit"
+            href="https://www.linkedin.com/in/zihong-l-258824257/"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">view source</p>
+            <p className="ml-2 h-7">My LinkedIn</p>
           </a>
         </li>
       </ul>
-      <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MIT Licensed
+      <p className="mt-2 text-neutral-600 dark:text-neutral-300">
+        API provided by{' '}
+        <a
+          className="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://randomuser.me/"
+        >
+          Random User Generator
+        </a>
       </p>
     </footer>
   )
