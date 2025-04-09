@@ -16,7 +16,7 @@ export function ContactCard({ contact }: { contact: ContactInfo }) {
 
   
   return (
-    <div className="bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+    <div className="min-h-80 bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
       <div className="w-32 h-32 rounded-full overflow-hidden">
         <Image
           src={contact.photoUrl}
