@@ -1,42 +1,87 @@
-# Portfolio Blog Starter
+# vCard Contact Generator  
+**Author:** Kingsley Leung (Zihong Liang)  
 
-This is a porfolio site template complete with a blog. Includes:
+A sleek web app built with React, Next.js, Tailwind CSS, and Sass that generates random contact information with the ability to export as `.vcf` (vCard) files.  
 
-- MDX and Markdown support
-- Optimized for SEO (sitemap, robots, JSON-LD schema)
-- RSS Feed
-- Dynamic OG images
-- Syntax highlighting
-- Tailwind v4
-- Vercel Speed Insights / Web Analytics
-- Geist font
+> Contact data is fetched from the [Random User Generator API](https://randomuser.me).
 
-## Demo
+---
 
-https://portfolio-blog-starter.vercel.app
+## ✨ Features
 
-## How to Use
+- 🔍 SEO Optimized: Includes sitemap, robots.txt, and JSON-LD schema
+- 🎨 Syntax Highlighting: Clean and readable code samples
+- 💨 Tailwind CSS v4: Utility-first styling for rapid UI development
+- 📊 Vercel Speed Insights & Analytics: Performance and usage tracking
+- 🖋️ Geist Font: Elegant and modern typography
+- 💅 Sass Support: For extended and modular styling
 
-You can choose from one of the following two methods to use this repository:
+> Built using the [Portfolio Starter Kit](https://vercel.com/templates/next.js/portfolio-starter-kit) template from Vercel.
 
-### One-Click Deploy
+---
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+## 🗺️ Roadmap
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
+- ✅ Fetch contact data from API  
+- ✅ Display generated contact information  
+- ✅ “Get Another Contact” button  
+- ⏳ Download single contact as `.vcf` (vCard)  
+- ⏳ Convert contact photo URLs to Base64 for embedding in `.vcf`  
+- ⏳ Bulk download of multiple contacts as `.vcf`  
+- 🚧 UI/UX improvements with animations and transitions  
+- 🔜 Export to CSV or JSON  
+- 🔜 Light/Dark mode toggle  
+- 📌 Add unit and integration tests  
 
-### Clone and Deploy
+> Have suggestions? Feel free to open an issue or submit a pull request!
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
+---
 
-```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
-```
+## 🚀 Live Demo  
+🔗 [vcardcontactgenerator.vercel.app](https://vcardcontactgenerator.vercel.app)
 
-Then, run Next.js in development mode:
+---
 
-```bash
-pnpm dev
-```
+## 🛠 Prerequisites
 
-Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+Make sure you have the following installed:
+
+- **Node.js** (v22)
+- **pnpm** (Enable via Corepack)
+    ```bash
+    corepack enable pnpm
+    ```
+- **Git** (to clone the repository)
+
+---
+
+## 🧑‍💻 Getting Started
+
+1. **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd vcard-contact-generator
+    ```
+
+2. **Install dependencies:**
+    ```bash
+    pnpm install
+    ```
+
+3. **Start the development server:**
+    ```bash
+    pnpm run dev
+    ```
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+## 🙌 Credits
+
+- Contact data powered by [Random User Generator](https://randomuser.me)  
+- Inspired by [Vercel’s Portfolio Starter Kit](https://vercel.com/templates/next.js/portfolio-starter-kit)
