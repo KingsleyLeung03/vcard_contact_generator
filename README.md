@@ -25,8 +25,8 @@ A sleek web app built with React, Next.js, Tailwind CSS, and Sass that generates
 - ✅ Fetch contact data from API  
 - ✅ Display generated contact information  
 - ✅ “Get Another Contact” button  
-- ⏳ Download single contact as `.vcf` (vCard)  
-- ⏳ Convert contact photo URLs to Base64 for embedding in `.vcf`  
+- ✅ Download single contact as `.vcf` (vCard)  
+- ✅ Convert contact photo URLs to Base64 for embedding in `.vcf`  
 - ⏳ Bulk download of multiple contacts as `.vcf`  
 - 🚧 UI/UX improvements with animations and transitions  
 - 🔜 Export to CSV or JSON  
