@@ -7,11 +7,10 @@ export function ContactCard({ contact }: { contact: ContactInfo }) {
       <div className="w-32 h-32 rounded-full overflow-hidden">
         <Image
           src={contact.photoUrl}
-          alt={`${contact.firstName} ${contact.lastName}'s photo`}
+          alt={`${contact.firstName} ${contact.lastName}`}
           width={128}
           height={128}
           className="object-cover w-full h-full"
-          priority={true}
         />
       </div>
       <div className="flex-1">
