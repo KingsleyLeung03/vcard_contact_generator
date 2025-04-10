@@ -41,10 +41,19 @@ export type ContactInfo = {
   firstName: string;
   lastName: string;
   title: string;
+  gender: string;
   email: string;
   phoneNumber: string;
   cellPhoneNumber: string;
-  address: string;
+  addressFull: string;
+  addressGeo: string;
+  addressStreetNumber: string;
+  addressStreetName: string;
+  addressCity: string;
+  addressState: string;
+  addressPostcode: string;
+  addressCountry: string;
   birthday: string;
+  birthdayFormatted: string; // YYYY-MM-DD format
   photoUrl: string;
 };
