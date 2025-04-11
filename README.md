@@ -1,6 +1,8 @@
 # vCard Contact Generator  
 **Author:** Kingsley Leung (Zihong Liang)  
 
+![vCard Contact Generator Open Graph Image](/app/opengraph-image.jpg)  
+
 A sleek web app built with React, Next.js, Tailwind CSS, and Sass that generates random contact information with the ability to export as `.vcf` (vCard) files.  
 
 > Contact data is fetched from the [Random User Generator API](https://randomuser.me).
