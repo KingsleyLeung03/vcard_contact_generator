@@ -30,7 +30,6 @@ export const metadata: Metadata = {
     // siteId: 'your_twitter_site_id', // To be added later
     creator: '@KingsleyLeung03',
     creatorId: '723487452988465152',
-    // images: ['/og-image.jpg'], // To be added later
   },
   robots: {
     index: true,
