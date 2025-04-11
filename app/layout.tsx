@@ -22,14 +22,6 @@ export const metadata: Metadata = {
     siteName: 'vCard Contact Generator',
     locale: 'en_US',
     type: 'website',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'vCard Contact Generator Open Graph Image',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -38,7 +30,6 @@ export const metadata: Metadata = {
     // siteId: 'your_twitter_site_id', // To be added later
     creator: '@KingsleyLeung03',
     creatorId: '723487452988465152',
-    images: ['/og-image.jpg'],
   },
   robots: {
     index: true,
