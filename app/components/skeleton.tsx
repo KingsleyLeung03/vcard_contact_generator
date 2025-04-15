@@ -1,6 +1,6 @@
 export function ContactCardSkeleton() {
   return (
-    <div className="min-h-90 bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 animate-pulse mb-8">
+    <div className="h-150 md:h-100 bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 animate-pulse mb-8">
       {/* Image Placeholder */}
       <div className="w-32 h-32 rounded-full bg-neutral-200 dark:bg-neutral-700"></div>
       

@@ -24,3 +24,7 @@ export function transformContact(apiContact: ApiContactInfo): ContactInfo {
     photoUrl: picture.large,
   };
 }
+
+export function transformContacts(apiContacts: ApiContactInfo[]): ContactInfo[] {
+  return apiContacts.map(transformContact);
+}
