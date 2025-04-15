@@ -77,7 +77,7 @@ export function ContactDisplay() {
       <button
         onClick={handleDownloadVcardSingle}
         disabled={contact === null}
-        className="me-2 mb-2 min-w-32 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 ease-in-out disabled:opacity-50"
+        className="me-2 mb-2 min-w-32 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 ease-in-out disabled:opacity-50"
       >
         Download as vCard
       </button> 
