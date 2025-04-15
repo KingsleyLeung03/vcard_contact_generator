@@ -29,7 +29,7 @@ A sleek web app built with React, Next.js, Tailwind CSS, and Sass that generates
 - ✅ “Get Another Contact” button  
 - ✅ Download single contact as `.vcf` (vCard)  
 - ✅ Convert contact photo URLs to Base64 for embedding in `.vcf`  
-- ⏳ Bulk download of multiple contacts as `.vcf`  
+- ✅ Bulk download of multiple contacts as `.vcf`  
 - 🚧 UI/UX improvements with animations and transitions  
 - 🔜 Export to CSV or JSON  
 - 🔜 Light/Dark mode toggle  
