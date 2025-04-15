@@ -16,7 +16,6 @@ export function ContactDisplayMulti() {
   const [inputValue, setInputValue] = useState<string>(String(contactCount));
 
   const loadContacts = useCallback(async () => {
-    console.debug(`Loading ${contactCount} contacts...`); // Log the count being used
     setIsLoading(true);
     setError(null);
     try {
