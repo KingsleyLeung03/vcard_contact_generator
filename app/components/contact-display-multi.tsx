@@ -65,30 +65,25 @@ export function ContactDisplayMulti() {
       {isLoading && <ContactCardSkeleton />}
       {error && <div className="mb-4 text-red-500">{error}</div>}
       {!isLoading && contacts && (
-        <div className="carousel rounded-box carousel-center mb-8 min-h-90 rounded-lg flex md:flex-row items-center md:space-x-6">
+        <div className="carousel rounded-box carousel-center mb-8 h-150 md:h-100 rounded-lg flex flex-row items-center space-x-2">
           {contacts.map((contact) => (
-            <div key={contact.email} className="carousel-item">
+            <div key={contact.email} className="carousel-item w-[95%] h-full">
               <ContactCard contact={contact} />
             </div>
           ))}
         </div>
-
-        // <div className="mb-8">
-        //   <ContactCard contact={contacts} />
-        // </div>
       )}
-      {/* Use a button for client-side action */}
       <button
         onClick={handleNewContact}
         disabled={isLoading}
-        className="me-2 min-w-32 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 ease-in-out disabled:opacity-50"
+        className="me-2 mb-2 min-w-32 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 ease-in-out disabled:opacity-50"
       >
         {isLoading ? 'Loading...' : 'New Contacts'}
       </button>
       <button
         onClick={handleDownloadVcardMulti}
         disabled={contacts === null}
-        className="me-2 min-w-32 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 ease-in-out disabled:opacity-50"
+        className="me-2 mb-2 min-w-32 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 ease-in-out disabled:opacity-50"
       >
         Download all as vCard
       </button> 

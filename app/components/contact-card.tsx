@@ -3,7 +3,7 @@ import { ContactInfo } from 'app/lib/definitions';
 
 export function ContactCard({ contact }: { contact: ContactInfo }) {
   return (
-    <div className="min-h-90 bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
+    <div className="h-150 md:h-100 bg-white dark:bg-neutral-800 rounded-lg shadow-md p-6 flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
       <div className="w-32 h-32 rounded-full overflow-hidden">
         <Image
           src={contact.photoUrl}
