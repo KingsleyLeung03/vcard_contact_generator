@@ -54,3 +54,8 @@ PHOTO;ENCODING=b;TYPE=JPEG:${photoBase64}
 END:VCARD`
   .trim();
 }
+
+export async function transformVcardMulti(contacts: ContactInfo[]): Promise<string> {
+  const vCards = await Promise.all(contacts.map(contact => transformVcardSingle(contact)));
+  return vCards.join('\n');
+}

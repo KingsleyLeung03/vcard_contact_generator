@@ -1,12 +1,10 @@
+import { ContactDisplayMulti } from "app/components/contact-display-multi";
+
 export default async function Page() {
 
   return (
     <section>
-
-        Multiple Contacts Page
-        <br />
-        TODO: Implement the multiple contacts page
-      
+      <ContactDisplayMulti />
     </section>
   );
 }
