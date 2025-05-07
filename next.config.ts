@@ -11,6 +11,7 @@ const nextConfig: import('next').NextConfig = {
         pathname: '/**',
       },
     ],
+    unoptimized: true,
   },
 }
 

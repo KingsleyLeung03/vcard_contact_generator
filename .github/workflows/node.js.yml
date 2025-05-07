@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         node-version: [22.x]
-        os: [ubuntu-latest, windows-latest, macOS-latest]
+        os: [ubuntu-latest, windows-latest, macOS-latest, windows-11-arm, ubuntu-24.04-arm]
 
     steps:
       - name: Checkout
