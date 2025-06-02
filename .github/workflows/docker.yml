@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macOS-latest, windows-11-arm, ubuntu-24.04-arm]
+        os: [ubuntu-latest]
 
     steps:
       - name: Checkout
@@ -23,8 +23,4 @@ jobs:
         uses: docker/setup-buildx-action@v3
 
       - name: Build Docker image
-        # This assumes your Dockerfile is named 'Dockerfile' and is at the root of your repository.
-        # If your Dockerfile (e.g., /home/kings/vcard_contact_generator/Dockerfile)
-        # is located at the root of your 'vcard_contact_generator' repository, then '-f Dockerfile' is correct.
-        # Adjust the '-f' flag if it's named differently or located in a subdirectory.
         run: docker build -t vcard-contact-generator:${{ github.sha }} .
