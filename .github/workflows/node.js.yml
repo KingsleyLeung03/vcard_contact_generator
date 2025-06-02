@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-
+    name: Build and Lint Node.js Application
     runs-on: ${{ matrix.os }}
 
     strategy:
