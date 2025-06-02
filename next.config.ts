@@ -3,6 +3,7 @@
  */
 
 const nextConfig: import('next').NextConfig = {
+  output: 'standalone',
   images: {
     remotePatterns: [
       {

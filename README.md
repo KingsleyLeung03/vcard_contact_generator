@@ -53,6 +53,7 @@ Make sure you have the following installed:
     ```bash
     corepack enable pnpm
     ```
+- **Docker** (Optional, for containerised development/deployment)
 - **Git** (to clone the repository)
 
 ---
@@ -74,6 +75,17 @@ Make sure you have the following installed:
     ```bash
     pnpm run dev
     ```
+
+4. **(Optional) Running with Docker:**
+   - **Build the Docker image:**
+    ```bash
+    docker build -t vcard-contact-generator .
+    ```
+   - **Run the Docker container:**
+    ```bash
+    docker run -p 3000:3000 vcard-contact-generator
+    ```
+    The application will be accessible at `http://localhost:3000`.
 
 ---
 
